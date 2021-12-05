@@ -11,7 +11,7 @@
     "start": "budo main.js:dist/bundle.js --live --host localhost",
     "watch": "watchify main.js -v --debug -o dist/bundle.js",
     "prep": "yarn && mkdirp dist",
-    "build": "browserify script.js -o dist/bundle.js",
+    "build": "browserify script.js -o dist/bundle.js build --output public",
     "lint": "eslint main.js --fix",
     "deploy": "yarn build && uglifyjs dist/bundle.js -c -m -o dist/bundle.min.js"
   },
