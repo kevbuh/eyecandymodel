@@ -7,7 +7,7 @@
     "babel-polyfill": "~6.26.0"
   },
   "scripts": {
-    "start": "budo main.js:dist/bundle.js --live --host localhost",
+    "start": "budo main.js:dist/bundle.js --live --host localhost node_modules/next/dist/bin/next start -p $PORT",
     "watch": "watchify main.js -v --debug -o dist/bundle.js",
     "prep": "yarn && mkdirp dist",
     "build": "browserify script.js build --output public",
