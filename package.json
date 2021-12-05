@@ -4,7 +4,8 @@
   "author": "kb",
   "dependencies": {
     "@tensorflow/tfjs": "~1.0.0",
-    "babel-polyfill": "~6.26.0"
+    "babel-polyfill": "~6.26.0",
+    "browserify": "^17.0.0"
   },
   "scripts": {
     "start": "budo main.js:dist/bundle.js --live --host localhost",
